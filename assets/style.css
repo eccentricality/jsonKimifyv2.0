@@ -1,7 +1,7 @@
 :root {
     /* Material Design Green and Black Theme */
     --primary:          #039BE5;
-    --primaryLight:     #;
+    --primaryLight:     #e1f5fe;
     --primaryDark:      #;
     --secondary:        #;
     --secondaryLight:   #;
@@ -62,6 +62,8 @@ ul {
     background: transparent no-repeat center;
     background-size: cover;
 }
+
+/* ------------------------------HEADER------------------------------- */
 
 .headingWrapper {
     display: grid;
@@ -152,40 +154,10 @@ ul {
     font-size: 70px;
 }
 
-.aboutMeWrapper {
-    display: grid;
-    /* instead of 1fr, 1fr, line of code to auto fit as many columns possible in row, repeat with min of 320px and naturally stack if smaller */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 80px;
-}
+/* ------------------------------MY PROJECTS------------------------------- */
 
-.aboutMeWrapper h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
-#skillsList {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--primaryDark);
-    max-width: 4600px;
-}
-
-#skillsList li {
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.socialMedia {
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
-
-#socialImg {
-    width: 100%;
+#myProjectsSection {
+    background-color: var(--primaryLight);
 }
 
 #myProjectsSection h1 {
@@ -201,8 +173,8 @@ ul {
 }
 
 .carousel-inner {
-    width: 320px;
-    height: 500px;
+    width: 339px;
+    height: 497px;
 }
 
 .carousel img {
@@ -234,7 +206,7 @@ ul {
 
 .projects {
     width: 300px;
-    max-height: 400px;
+    height: 450px;
     -webkit-box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.86); 
     box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.86);
 }
@@ -254,6 +226,49 @@ ul {
 .projectTitle {
     padding-bottom: 5px;
 }
+
+/* ------------------------------ABOUT ME------------------------------- */
+
+#aboutMeSection h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+#aboutMeSection h1 span {
+    color: var(--primary);
+    font-size: 70px;
+}
+
+#aboutMeSection p {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 16px;
+}
+
+#skillsList li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.socialMedia {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#socialImg {
+    justify-content: center;
+}
+
+.resumeButton {
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/* ------------------------------CONTACT ME------------------------------- */
 
 #contactMeSection h2 {
     text-align: center;
@@ -297,10 +312,59 @@ ul {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+/* ------------------------------MEDIA QUERIES------------------------------- */
+
+@media screen and (max-width: 1300px) {
     .mainContainer {
         min-width: 800px;
     }
+
+    #introSection {
+        width: 500px;
+    }
+
+    #introSection h2 {
+        font-size: 12px;
+    }
+
+    #introSection h2 span {
+        font-size: 14px;
+    }
+
+    #aboutMeSection p {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #introSection {
+        width: 450px;
+    }
+
+    #introSection h2 {
+        font-size: 12px;
+    }
+
+    #introSection h2 span {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    #introSection {
+        width: 400px;
+    }
+
+    #introSection h2 {
+        font-size: 12px;
+    }
+
+    #introSection h2 span {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 820px) {
@@ -328,6 +392,21 @@ ul {
     #myProjectsSection h1 span {
         font-size: 60px;
     }
+
+    #aboutMeSection p {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    #aboutMeSection h1 {
+        font-size: 40px;
+    }
+    
+    #aboutMeSection h1 span {
+        font-size: 60px;
+    }
+
+    
 }
 
 @media screen and (max-width: 630px) {
@@ -365,8 +444,6 @@ ul {
 
     #introSection h2 span {
         font-size: 14px;
-
-        -webkit-text-stroke-width: .2px;
     }
 
     .aboutMe p {
@@ -379,5 +456,18 @@ ul {
     
     #myProjectsSection h1 span {
         font-size: 45px;
+    }
+
+    #aboutMeSection p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #aboutMeSection h1 {
+        font-size: 40px;
+    }
+    
+    #aboutMeSection h1 span {
+        font-size: 60px;
     }
 }
