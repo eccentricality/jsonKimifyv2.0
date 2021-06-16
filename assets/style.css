@@ -290,6 +290,23 @@ ul {
     width: 50%;
 }
 
+footer {
+    background-color: var(--primaryLight);
+    border: 0;
+    margin: 0;
+}
+
+footer p {
+    opacity: .6;
+    border: 0;
+    margin: 0;
+    padding-bottom: .2em;
+}
+
+#copyrightLogo {
+    width: 15px;
+}
+
 /* ------------------------------MEDIA QUERIES------------------------------- */
 
 @media screen and (max-width: 1300px) {
