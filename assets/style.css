@@ -255,10 +255,11 @@ ul {
     display: grid;
     align-content: center;
     text-align: center;
+    background-color: #fff3e0;
 }
 
 #socialImg {
-    width: 40%;
+    width: 90%;
 }
 
 .resumeButton {
