@@ -409,6 +409,12 @@ ul {
         width: 300px;
     }
 
+    #introQuote {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 1em;
+    }
+
     #myName {
         font-size: 20px;
     }
